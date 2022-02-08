@@ -1,0 +1,357 @@
+/* app.css*/
+/* body {
+  padding: 100px 0;
+} */
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  vertical-align: middle;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.page-header ul li {
+  margin-left: 2rem;
+}
+.page-header ul li a {
+  text-decoration: none;
+}
+.container > .row {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+span.badge-medium {
+  padding: 11px 10px;
+  margin: 0px 8px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.marginB11 {
+  width: 100%;
+  color: white !important;
+}
+
+.display1 {
+  display: flex;
+  justify-content: end;
+}
+
+.label_1 {
+  color: white;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sort-by {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  background-color: dimgrey;
+  text-transform: uppercase;
+  justify-content: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+.button-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.danger {
+  background-color: #f44336;
+}
+
+.success {
+  background-color: #04aa6d;
+}
+
+.warning {
+  background-color: #ff9800;
+}
+
+.marginB10 {
+  justify-content: flex-end;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0%;
+}
+.panel-success {
+  padding-top: 20px;
+}
+
+.page-ava{
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.page-ava img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    box-shadow: 1px 1px 2px 2px grey;
+    cursor: pointer;
+}
+/* .page-ava p{
+  margin-bottom: 0;
+  margin-right: 5px;
+} */
+@media (max-width: 992px) {
+  .add-task {
+    margin-top: 50px;
+  }
+}
+
+.task {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.task.opentask {
+  visibility: visible;
+  opacity: 1;
+}
+/* ==================login======================== */
+.background {
+  background-image: linear-gradient(to right, #0000005c, #0000005c),
+    url(./img/phong-canh-1.jpg);
+
+  background-repeat: no-repeat;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-size: cover;
+
+  z-index: -1;
+}
+.account {
+  width: 55rem;
+  background-color: #00000085;
+  border-radius: 0.3rem;
+  position: relative;
+  height: 27rem;
+  margin: 7rem auto;
+  justify-content: space-between;
+  display: flex;
+}
+.account__sign-up {
+  height: 60%;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+.account__sign-up h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7em;
+  margin: 0.5rem 0;
+  color: white;
+  font-weight: 300;
+}
+.account__sign-up p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: 100;
+}
+.account__sign-up button {
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  background-color: #00000085;
+  border-radius: 0.4rem;
+  padding: 0.4rem 1.5rem;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+.account__form {
+  position: absolute;
+  width: 28rem;
+  box-shadow: 1px 1px 15px 2px;
+  height: 29.6rem;
+  z-index: 1;
+  background-color: white;
+  border-radius: 0.3rem;
+  top: -5%;
+  transition: 0.4s all;
+}
+.account__form form.sign-up {
+  width: 80%;
+  margin: 5rem auto;
+}
+.account__form form.login {
+  /* display:none; */
+}
+
+.account__form form.login a {
+  text-decoration: none;
+  color: #808080a8;
+  margin-left: 8rem;
+  cursor: pointer;
+}
+.account__form h3 {
+  color: #f09283;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.account__form form input {
+  border-radius: 0px;
+  border-bottom: 1px solid #80808045;
+  width: 100%;
+  cursor: auto;
+  text-align: start;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.account__form .button {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f09283;
+  padding: 0.4rem 2rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: 400;
+  outline: none;
+  margin-top: 1rem;
+  border: 1px solid #ffff006e;
+  width: 8rem;
+}
+
+.account__form .login .button {
+  width: 6.7rem;
+}
+.account__login {
+  margin-top: 7rem;
+  margin-right: 6rem;
+}
+.account__login h4 {
+  width: 100%;
+}
+
+.right {
+  animation: animaltion__right 2s;
+}
+
+.left {
+  animation: animaltion__left 2s;
+}
+
+.animaltion-left {
+  left: 5%;
+  transition: 0.4s all;
+}
+
+.animaltion-right {
+  left: 44%;
+  transition: 0.4s all;
+}
+@keyframes animaltion__right {
+  0% {
+    left: 44%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+
+@keyframes animaltion__left {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 49%;
+  }
+  100% {
+    left: 44%;
+  }
+}
+
+/* =====================NAV================================= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* body {
+  font-family: "Montserrat", sans-serif;
+} */
+
+.navMenu {
+  background: #272727;
+  padding-top: 0.5rem;
+
+}
+
+.navMenu a {
+  text-align: center;
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 90px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+.active{
+  color: #fddb3a !important;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  transform: translateX(41px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  transform: translateX(132px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
